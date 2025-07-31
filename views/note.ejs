@@ -1,0 +1,21 @@
+<div class="<%= secureMode ? 'secure-mode' : 'insecure-mode' %>">
+  <%= secureMode ? 'SECURE MODE 🔒' : 'INSECURE MODE ⚠️' %>
+</div>
+
+<h2>
+  <% if (secureMode) { %>
+    <%= note.title %>
+  <% } else { %>
+    <%- note.title %>
+  <% } %>
+</h2>
+
+<p>
+  <% if (secureMode) { %>
+    <%= note.content %>
+  <% } else { %>
+    <%- note.content %>
+  <% } %>
+</p>
+
+<a href="/notes">Back</a>

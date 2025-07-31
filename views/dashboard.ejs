@@ -1,0 +1,15 @@
+<div class="<%= secureMode ? 'secure-mode' : 'insecure-mode' %>">
+  <%= secureMode ? 'SECURE MODE 🔒' : 'INSECURE MODE ⚠️' %>
+</div>
+<h2>Your Notes</h2>
+<ul>
+  <% notes.forEach(note => { %>
+    <li><a href="/notes/view/<%= note.id %>"><%= note.title %></a></li>
+  <% }) %>
+</ul>
+<form method="POST" action="/notes/add">
+  <input name="title" placeholder="Title" required />
+  <textarea name="content" placeholder="Content"></textarea>
+  <button>Add Note</button>
+</form>
+<a href="/logout">Logout</a>
