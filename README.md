@@ -48,7 +48,7 @@ SecureNotesApp/
 1. **Clone the repo**
 
    ```bash
-   git clone https://github.com/your-username/secure-notes-app.git
+   git clone https://github.com/AkashdeepQA/SecureNotesApp.git
    cd secure-notes-app
    ```
 
