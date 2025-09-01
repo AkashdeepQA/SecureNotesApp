@@ -49,7 +49,7 @@ SecureNotesApp/
 
    ```bash
    git clone https://github.com/AkashdeepQA/SecureNotesApp.git
-   cd secure-notes-app
+   cd SecureNotesApp
    ```
 
 2. **Install dependencies**
